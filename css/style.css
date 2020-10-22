@@ -331,6 +331,10 @@ a, a:hover{
 	color: #506a85;
 	padding: 25px 0px;
 }
+.wrapper .filter{
+	text-align: center;
+	padding: 25px 0px;
+}
 /*wrapper section css end*/
 
 
@@ -339,6 +343,8 @@ a, a:hover{
 
 .animated-counter{
 	width: 100%;
+	padding: 50px 0px;
+	background: #f2f5f7;
 }
 
 .animated-counter .counter{
