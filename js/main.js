@@ -58,16 +58,16 @@ jQuery(function($) {
 		$('#counter-block').ready(function(){
         $('.fb').animationCounter({
           start: 0,
-          step: 100,
-          end: 10000000,
-          delay:50,
+          step: 1000,
+          end: 1000000,
+          delay:10,
           txt: ' Likes'
         });
         $('.client').animationCounter({
           start: 0,
           step: 1,
           end: 327,
-          delay:50,
+          delay:100,
           txt: ' + Clients'
         });
         
@@ -80,4 +80,54 @@ jQuery(function($) {
         });
     });
 	});
+});
+
+//SCROLL BUTTON JS
+jQuery(function($) {
+	$(document).ready( function() {
+		 //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+	});
+});
+
+
+//PROGRESSBAR JS
+jQuery(function($) {
+  $(document).ready( function() {
+     $('#example8').progressBarTimer({
+        
+        autoStart: true, 
+        striped: true,
+        height: 50,
+        smooth: true,
+        completeStyle: 'bg-success', 
+        label: { show: true, type: 'percent'   
+
+      }});
+  });
+});
+
+//SCROLL BUTTON JS
+jQuery(function($) {
+  $(document).ready( function() {
+
+    
+  });
 });

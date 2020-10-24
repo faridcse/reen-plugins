@@ -319,6 +319,7 @@ a, a:hover{
 
 .wrapper{
 	width: 100%;
+	padding: 25px 0px;
 
 }
 .wrapper .text{
@@ -335,6 +336,49 @@ a, a:hover{
 	text-align: center;
 	padding: 25px 0px;
 }
+
+.wrapper .filter .btn-info{
+	font-size: 15px;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 10px 35px;
+	border-radius: 3px;
+	
+	background: #00bc9c;
+	color: #fff;
+	border: 1px solid #00bc9c;
+	margin-top: 25px;
+	transition: 1s;
+}
+
+.wrapper .filter .btn-info:hover, .wrapper .filter .btn-info:focus{
+	background: transparent;
+	color: #00bc9c;
+	border: 1px solid #00bc9c;
+}
+
+.wrapper .filter .btn-info:active{
+	background: transparent;
+	color: #00bc9c;
+	border: 1px solid #00bc9c;
+}
+
+.wrapper .portfolio .item{
+	width: 100%;
+	padding: 5px 5px;
+	position: relative;
+}
+
+.wrapper .portfolio .item .item-hover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 136, 204, .8);
+	text-align: center;
+	transform: scale(0);
+	transition: 0.3s;
+}
+
 /*wrapper section css end*/
 
 
@@ -400,6 +444,28 @@ a, a:hover{
   		font-size: 30px; 
   	}
 /*animated counter css end*/
+
+
+/*progressvar css start*/
+
+	.progressbar{
+		width: 100%;
+		padding: 80px 0px;
+	}
+
+	.progressbar h2{
+	font-size: 44px;
+	font-weight: 700;
+	color: #506a85;
+	text-align: center;
+	margin-bottom: 50px;
+	}
+
+	#example8{
+		line-height: 50px;
+	}
+
+/*progressvar css end*/
 
 /*footer-widget section css start*/
 .footer-widget{
