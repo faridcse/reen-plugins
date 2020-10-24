@@ -363,9 +363,11 @@ a, a:hover{
 	border: 1px solid #00bc9c;
 }
 
+.wrapper .portfolio .padd{
+	padding: 5px;
+}
 .wrapper .portfolio .item{
 	width: 100%;
-	padding: 5px 5px;
 	position: relative;
 }
 
@@ -373,10 +375,26 @@ a, a:hover{
 	position: absolute;
 	top: 0;
 	left: 0;
+	right: 0;
+	bottom: 0;
 	background: rgba(0, 136, 204, .8);
 	text-align: center;
 	transform: scale(0);
 	transition: 0.3s;
+}
+
+.wrapper .portfolio .item:hover .item-hover{
+	transform: scale(1);
+}
+
+.wrapper .portfolio .item .item-hover .fa{
+	font-size: 60px;
+	color: #fff;
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 /*wrapper section css end*/
@@ -466,6 +484,15 @@ a, a:hover{
 	}
 
 /*progressvar css end*/
+
+/*particle-js css start*/
+
+.particle{
+	width: 100%;
+	background: grey;
+}
+
+/*particle-js css end*/
 
 /*footer-widget section css start*/
 .footer-widget{
