@@ -131,3 +131,29 @@ jQuery(function($) {
     
   });
 });
+
+//SWIPER JS
+jQuery(function($) {
+  $(document).ready( function() {
+
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      spaceBetween: 50,
+      coverflowEffect: {
+        rotate: 30,
+        stretch: 0,
+        depth: 400,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+    
+  });
+});
